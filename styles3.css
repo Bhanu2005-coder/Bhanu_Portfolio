@@ -1,0 +1,277 @@
+/* =========================================
+   Projects Section
+   ========================================= */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(191, 0, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: var(--bg-glass-hover);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.project-links a {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.project-links a:hover {
+    color: var(--accent-secondary);
+}
+
+.project-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+    transition: color var(--transition-fast);
+}
+
+.project-card:hover .project-title {
+    color: var(--accent-primary);
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-tech span {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--accent-secondary);
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   Achievements & Certifications
+   ========================================= */
+.text-accent {
+    color: var(--accent-primary);
+    margin-right: 10px;
+}
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cert-list li {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cert-list i {
+    margin-top: 5px;
+}
+
+.cert-list strong {
+    color: var(--text-main);
+}
+
+/* =========================================
+   Coding Profiles
+   ========================================= */
+.coding-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    transition: all var(--transition-medium);
+    cursor: none;
+}
+
+.profile-card:hover {
+    background: rgba(0, 240, 255, 0.05);
+    border-color: var(--accent-primary);
+    transform: translateX(10px);
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leetcode-icon,
+.codechef-icon {
+    filter: invert(1);
+    /* makes the black logo white */
+}
+
+.hackerrank-icon {
+    color: #2ec866;
+    /* HackerRank brand color */
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h4 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+    transition: color var(--transition-fast);
+}
+
+.profile-card:hover .profile-info h4 {
+    color: var(--accent-primary);
+}
+
+.profile-info span {
+    font-size: 0.85rem;
+    color: var(--accent-secondary);
+}
+
+.arrow-icon {
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.profile-card:hover .arrow-icon {
+    color: var(--accent-primary);
+    transform: translateX(5px);
+}
+
+/* =========================================
+   Contact Section
+   ========================================= */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.contact-desc {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+    width: 25px;
+    text-align: center;
+}
+
+a.contact-item:hover {
+    color: var(--accent-primary);
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+/* Footer Adjustments */
+footer {
+    padding: 30px 5%;
+    background: rgba(10, 10, 10, 0.9);
+    border-top: 1px solid var(--border-glass);
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: all var(--transition-fast);
+}
+
+.social-links a:hover {
+    color: var(--accent-primary);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-details {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

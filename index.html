@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mankala BhanuChandra | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Mankala BhanuChandra, CS & IoT student specializing in Data Structures, Algorithms, DevOps, and Full-Stack Development.">
+
+    <!-- Google Fonts: Space Grotesk for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">MB.</a>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Coding</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero section">
+            <!-- Background Elements -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Mankala BhanuChandra.</h1>
+                <h2 class="title">I build <span class="typing-text"></span></h2>
+                <p class="summary">
+                    Third-year B.Tech student specializing in Computer Science (IoT) with a strong foundation in Data
+                    Structures, Algorithms, and OOPS. Passionate about DevOps, CI/CD,Software Development and IoT.
+                    Solved
+                    200+ LeetCode problems and 100+ HackerRank problems.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank"
+                        download="Mankala_BhanuChandra_Resume.pdf"><i class="fa-solid fa-download"></i> Download
+                        Resume</a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content grid-2-col">
+                <div class="about-text glass-card">
+                    <p>
+                        I am a third-year B.Tech student specializing in Computer Science with a focus on Internet of
+                        Things (IoT) at Malla Reddy Engineering College. Driven by a intense curiosity for solving
+                        complex problems, I've developed a strong academic foundation in <span class="highlight">Data
+                            Structures</span>, <span class="highlight">Algorithms</span>, and <span
+                            class="highlight">OOPs</span>.
+                    </p>
+                    <p>
+                        Beyond the classroom, I've immersed myself in the practical world of <span
+                            class="highlight">DevOps</span> and <span class="highlight">CI/CD pipelines</span>. I have
+                        hands-on experience using tools like Linux, Git, Maven, Jenkins, SonarQube, Nexus, Tomcat,
+                        Ansible, and Docker.
+                    </p>
+                    <p>
+                        My proficiency in competitive programming is highlighted by solving <span class="highlight">200+
+                            LeetCode problems and 100+ HackerRank Problems</span> and actively participating in LeetCode
+                        contests.
+                    </p>
+                </div>
+
+                <div class="about-stats glass-card flex-center">
+                    <div class="stat-item">
+                        <h3 class="stat-number">200+</h3>
+                        <p class="stat-label">Problems Solved</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">9.68</h3>
+                        <p class="stat-label">B.Tech CGPA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">4+</h3>
+                        <p class="stat-label">Major Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <span class="timeline-date">Aug 2023 - May 2027</span>
+                        <h3 class="timeline-degree">B.Tech in Computer Science (IoT)</h3>
+                        <h4 class="timeline-institution">Malla Reddy Engineering College, Hyderabad</h4>
+                        <p class="timeline-score gradient-text">CGPA: 9.68/10</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3 class="timeline-degree">Intermediate (MPC)</h3>
+                        <h4 class="timeline-institution">Sri Chaitanya Junior Kalasala, Hyderabad</h4>
+                        <p class="timeline-score gradient-text">Percentage: 96.8%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-lift">
+                        <span class="timeline-date">2020 - 2021</span>
+                        <h3 class="timeline-degree">SSC</h3>
+                        <h4 class="timeline-institution">Sri Nikhileshwarananda High School, Siddipet</h4>
+                        <p class="timeline-score gradient-text">10 CGPA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-container grid-2-col">
+
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages & Core</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">OS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-server"></i> DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">Nexus</span>
+                        <span class="skill-tag">Tomcat</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Eclipse</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-microchip"></i> IoT & Embedded</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Arduino IDE</span>
+                        <span class="skill-tag">Node MCU</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Microcontrollers</span>
+                        <span class="skill-tag">Sensors (Ultrasonic, GPS, IR)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JDBC</span>
+                        <span class="skill-tag">Spring Framework (Basic)</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid grid-2-col">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-brands fa-docker project-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhanu2005-coder/docker-project.git" target="_blank"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="Docker-End-End-Project.pdf" target="_blank" aria-label="Download PDF"
+                                    download="Docker-End-End-Project.pdf" title="Download Project PDF"><i
+                                        class="fa-solid fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Docker End-to-End Project</h3>
+                        <p class="project-desc">
+                            Built and deployed a fully containerized end-to-end application using Docker. Covers
+                            container creation, image building, Docker networking, volumes, and Docker Compose for
+                            multi-service orchestration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>Docker Compose</span>
+                            <span>Linux</span>
+                            <span>Containerization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-rocket project-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhanu2005-coder/swiggy.git" target="_blank"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">CI/CD Pipeline for Java Web App</h3>
+                        <p class="project-desc">
+                            Designed and implemented an end-to-end CI/CD pipeline using Jenkins for automated build,
+                            test, and deployment. Integrated GitHub for version control, Maven for build, and performed
+                            static code analysis using SonarQube. Published artifacts to Nexus and deployed on Apache
+                            Tomcat.
+                        </p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Maven</span>
+                            <span>SonarQube</span>
+                            <span>Tomcat</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-water project-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhanu2005-coder/FloodDetection-and-Management.git"
+                                    target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Flood Detection System</h3>
+                        <p class="project-desc">
+                            Developed an IoT-based system to monitor water levels and send real-time alerts via Blynk.
+                            Enabled early flood warnings by integrating NodeMCU and Ultrasonic Sensors.
+                        </p>
+                        <div class="project-tech">
+                            <span>NodeMCU</span>
+                            <span>Ultrasonic Sensor</span>
+                            <span>Blynk</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-person-walking-with-cane project-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhanu2005-coder" target="_blank" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Blind Stick with GPS Tracking</h3>
+                        <p class="project-desc">
+                            Built a smart assistive device with obstacle detection using Ultrasonic and IR sensors.
+                            Enabled live GPS location tracking for enhanced user safety.
+                        </p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>GPS Module</span>
+                            <span>Sensors</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-chart-line project-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhanu2005-coder/pizza_sales--sql.git" target="_blank"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Pizza Sales Data Analysis</h3>
+                        <p class="project-desc">
+                            Designed a relational database and executed SQL queries to analyze sales trends. Identified
+                            best-selling items and peak hours to optimize inventory planning.
+                        </p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>CSV</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements & Coding Profiles -->
+        <section id="achievements" class="achievements section">
+            <h2 class="section-title">Achievements & <span class="gradient-text">Profiles</span></h2>
+            <div class="achievements-container grid-2-col">
+                <div class="awards glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-trophy"></i> Achievements</h3>
+                    <ul class="cert-list">
+                        <li><i class="fa-solid fa-star text-accent"></i> Awarded <strong>National Scholarship
+                                (NSP)</strong> for academic excellence.</li>
+                        <li><i class="fa-solid fa-star text-accent"></i> Consistently maintained a &nbsp;&nbsp; <strong>
+                                9.68
+                                CGPA</strong>.</li>
+                        <li><i class="fa-solid fa-star text-accent"></i> Active participant in LeetCode contests (Solved
+                            200+ problems).</li>
+                    </ul>
+                </div>
+
+                <div class="certifications glass-card">
+                    <h3 class="category-title"><i class="fa-solid fa-code"></i> Coding Profiles</h3>
+                    <div class="coding-profiles">
+                        <a href="https://leetcode.com/u/bhanuchandra05/" target="_blank" class="profile-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                                alt="LeetCode" class="profile-icon leetcode-icon">
+                            <div class="profile-info">
+                                <h4>LeetCode</h4>
+                                <span>200+ Solved</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/mankalabhanucha1" target="_blank"
+                            class="profile-card">
+                            <i class="fa-brands fa-hackerrank profile-icon hackerrank-icon"></i>
+                            <div class="profile-info">
+                                <h4>HackerRank</h4>
+                                <span>100+ Solved</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://www.codechef.com/users/bhanuchandra05" target="_blank" class="profile-card">
+                            <img src="https://cdn.simpleicons.org/codechef" alt="CodeChef"
+                                class="profile-icon codechef-icon">
+                            <div class="profile-info">
+                                <h4>CodeChef</h4>
+                                <span>Active</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section">
+            <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                <ul class="cert-list"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <li><i class="fa-solid fa-certificate text-accent"></i> <strong>NPTEL</strong> - Python for Data
+                        Science</li>
+                    <li><i class="fa-solid fa-certificate text-accent"></i> <strong>NPTEL</strong> - Problem Solving
+                        Through Programming in C</li>
+                    <li><i class="fa-solid fa-certificate text-accent"></i> <strong>NPTEL</strong> - Programming in Java
+                    </li>
+                    <li><i class="fa-solid fa-certificate text-accent"></i> <strong>Microsoft</strong> - Azure AI
+                        Fundamentals</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-container glass-card">
+                <div class="contact-info">
+                    <p class="contact-desc">
+                        I'm currently looking for new opportunities, mainly internships or entry-level roles in Software
+                        Engineering, DevOps, or IoT. My inbox is always open!
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:mankalabhanuchandra@gmail.com" class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>mankalabhanuchandra@gmail.com</span>
+                        </a>
+                        <a href="tel:+919573070212" class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91-9573070212</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Hyderabad, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-action flex-center">
+                    <a href="mailto:mankalabhanuchandra@gmail.com" class="btn btn-primary btn-lg">Say Hello</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Mankala BhanuChandra. Built from scratch.</p>
+            <div class="social-links">
+                <a href="https://github.com/Bhanu2005-coder" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/mankalabhanuchandra" target="_blank" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/u/bhanuchandra05/" target="_blank" aria-label="LeetCode">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                        alt="LeetCode" style="width: 20px; filter: invert(1);">
+                </a>
+                <a href="https://www.hackerrank.com/profile/mankalabhanucha1" target="_blank" aria-label="HackerRank">
+                    <i class="fa-brands fa-hackerrank"></i>
+                </a>
+                <a href="https://www.codechef.com/users/bhanuchandra05" target="_blank" aria-label="CodeChef">
+                    <img src="https://cdn.simpleicons.org/codechef" alt="CodeChef"
+                        style="width: 20px; filter: invert(1);">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
